@@ -1,0 +1,45 @@
+<header>
+  <div class="menu-toggler" (click)="toggleClass()" #menuToggler>
+    <div class="bar half start"></div>
+    <div class="bar"></div>
+    <div class="bar half end"></div>
+  </div>
+  <nav class="top-nav" #topnav>
+    <ul class="nav-list">
+      <li>
+        <a class="nav-link" href="index.html">
+          Home
+        </a>
+      </li>
+      <li>
+        <a class="nav-link" href="#about">
+          About
+        </a>
+      </li>
+      <li>
+        <a class="nav-link" href="#services">
+          Services
+        </a>
+      </li>
+      <li>
+        <a class="nav-link" href="#portfolio">
+          Portfolio
+        </a>
+      </li>
+      <li>
+        <a class="nav-link" href="#experience">
+          Experience
+        </a>
+      </li>
+      <li>
+        <a class="nav-link" href="#contact">
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="landing-text">
+    <h1>{{ name }}</h1>
+    <h6>{{ title }}</h6>
+  </div>
+</header>
