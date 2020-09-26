@@ -20,6 +20,10 @@ export class DataService {
     return of(about);
   }
 
+  githubLinkAccount() {
+    return of('https://github.com/gary94746');
+  }
+
   technologies() {
     const stack: { technologyName: string }[] = [
       { technologyName: 'Angular' },

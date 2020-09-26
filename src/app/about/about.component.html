@@ -6,15 +6,16 @@
         <h6>Myself</h6>
       </div>
       <p>
-        Elit quod rerum consequuntur itaque repellat? Totam explicabo id
-        exercitationem officia consequatur sit. Enim ducimus illo placeat
-        mollitia quibusdam amet Deserunt mollitia incidunt natus soluta
-        perferendis. Tempore a libero repellendus.
+        {{ getAbout() | async }}
       </p>
       <div class="social-media">
         <ul class="nav-list">
           <li>
-            <a class="icon-link" href="#">
+            <a
+              class="icon-link"
+              href="{{ getGithubAccount() | async }}"
+              target="_blank"
+            >
               <i class="fab fa-github-alt" id="breathing-button"></i>
             </a>
           </li>
