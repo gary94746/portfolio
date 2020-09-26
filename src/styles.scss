@@ -1,3 +1,6 @@
+$breath: #73ffc255;
+
+
 * {
   margin: 0;
   padding: 0;
@@ -89,5 +92,22 @@ img {
 
 .has-margin-right {
   margin-right: 5rem;
+}
+
+@keyframes pulse {
+  25% {
+		border-radius:50%;
+    box-shadow: 0 0 0 0rem $breath;
+  }
+
+  50% {
+		border-radius:50%;
+    box-shadow: 0 0 0 0.5rem $breath
+  }
+
+  70% {
+		border-radius:50%;
+    box-shadow: 0 0 0 1rem $breath
+  }
 }
 

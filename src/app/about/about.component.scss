@@ -1,4 +1,3 @@
-$breath: #73ffc255;
 
 .about .container {
   display: flex;
@@ -53,22 +52,5 @@ p {
 }
 #breathing-button:hover {
 	color: #73ffc2
-}
-///////////////////////
-@keyframes pulse {
-  25% {
-		border-radius:50%;
-    box-shadow: 0 0 0 0rem $breath
-  }
-
-  50% {
-		border-radius:50%;
-    box-shadow: 0 0 0 0.5rem $breath
-  }
-
-  70% {
-		border-radius:50%;
-    box-shadow: 0 0 0 1rem $breath
-  }
 }
 
