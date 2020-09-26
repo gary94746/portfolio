@@ -1,0 +1,74 @@
+$breath: #73ffc255;
+
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-heading {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-bottom: 6rem;
+}
+
+.about-heading h1 {
+  font-size: 10rem;
+  opacity: 0.3;
+}
+
+.about-heading h6 {
+  font-size: 3rem;
+  font-weight: 600;
+
+}
+
+.about-detail {
+	flex: 1;
+}
+
+.social-media {
+	margin-top: 10rem;
+	display: contents;
+	text-align: center;
+}
+
+.social-media i {
+	font-size: 5rem;
+	transition: color 650ms;
+}
+
+ul {
+	list-style: none;
+}
+
+p {
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+#breathing-button {
+	  animation: pulse 2s infinite;
+}
+#breathing-button:hover {
+	color: #73ffc2
+}
+///////////////////////
+@keyframes pulse {
+  25% {
+		border-radius:50%;
+    box-shadow: 0 0 0 0rem $breath
+  }
+
+  50% {
+		border-radius:50%;
+    box-shadow: 0 0 0 0.5rem $breath
+  }
+
+  70% {
+		border-radius:50%;
+    box-shadow: 0 0 0 1rem $breath
+  }
+}
+
