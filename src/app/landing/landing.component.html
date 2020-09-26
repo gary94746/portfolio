@@ -38,8 +38,8 @@
       </li>
     </ul>
   </nav>
-  <div class="landing-text">
-    <h1>{{ name }}</h1>
-    <h6>{{ title }}</h6>
+  <div class="landing-text" *ngIf="landingInfo() | async; let landing">
+    <h1>{{ landing[0] }}</h1>
+    <h6>{{ landing[1] }}</h6>
   </div>
 </header>

@@ -1,4 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { DataService } from '../data.service';
+import { combineLatest } from 'rxjs';
 
 @Component({
   selector: 'app-landing',
@@ -9,15 +11,16 @@ export class LandingComponent implements OnInit {
   @ViewChild('topnav') topNav: ElementRef;
   @ViewChild('menuToggler') menuToggler: ElementRef;
 
-  name = 'Jorge Edgar Sánchez Chávez';
-  title = 'Angular | NestJS Web Developer';
-
-  constructor() {}
+  constructor(private readonly service: DataService) {}
 
   ngOnInit(): void {}
 
   toggleClass() {
     this.menuToggler.nativeElement.classList.toggle('open');
     this.topNav.nativeElement.classList.toggle('open');
+  }
+
+  landingInfo() {
+    return combineLatest([this.service.userName(), this.service.title()]);
   }
 }
