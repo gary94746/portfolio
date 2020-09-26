@@ -1,5 +1,8 @@
+$primary: #73ffc2;
+$secondary: #73bbff;
+
 .timeline ul {
-  border-left: 4px solid #ffe838;
+  border-left: 4px solid $primary;
   background-color: rgba(0, 0, 0, 0.05);
   margin: 0 auto;
   position: relative;
@@ -47,10 +50,24 @@
 
 .timeline .date::after {
   content: "";
-  box-shadow: 0 0 0 4px #fd57bf;
+  box-shadow: 0 0 0 4px $secondary;
   border-radius: 100%;
-  left: -8rem;
+  left: -6rem;
   height: 1.5rem;
   width: 1.5rem;
   background-color: #313534;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline ul {
+    margin: 0 0 0 auto;
+  }
+
+  .timeline .date::before {
+    left: -19rem;
+  }
+
+  .timeline .date::after {
+    left: -5.9rem;
+  }
 }
