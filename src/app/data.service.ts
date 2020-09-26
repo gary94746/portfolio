@@ -20,8 +20,20 @@ export class DataService {
     return of(about);
   }
 
-  githubLinkAccount() {
-    return of('https://github.com/gary94746');
+  getSocialMedia() {
+    const socialMedia: {
+      icon: string;
+      socialMediaName: string;
+      link: string;
+    }[] = [
+      {
+        icon: 'fab fa-github-alt',
+        socialMediaName: 'GitHub',
+        link: 'https://github.com/gary94746',
+      },
+    ];
+
+    return of(socialMedia);
   }
 
   technologies() {

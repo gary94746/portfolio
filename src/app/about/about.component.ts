@@ -1,11 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  trigger,
-  transition,
-  animate,
-  style,
-  keyframes,
-} from '@angular/animations';
 import { DataService } from '../data.service';
 
 @Component({
@@ -22,7 +15,7 @@ export class AboutComponent implements OnInit {
     return this.service.about();
   }
 
-  getGithubAccount() {
-    return this.service.githubLinkAccount();
+  getSocialMedia() {
+    return this.service.getSocialMedia();
   }
 }

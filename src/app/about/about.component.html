@@ -9,14 +9,13 @@
         {{ getAbout() | async }}
       </p>
       <div class="social-media">
-        <ul class="nav-list">
+        <ul
+          class="nav-list"
+          *ngFor="let socialMedia of getSocialMedia() | async"
+        >
           <li>
-            <a
-              class="icon-link"
-              href="{{ getGithubAccount() | async }}"
-              target="_blank"
-            >
-              <i class="fab fa-github-alt" id="breathing-button"></i>
+            <a class="icon-link" href="{{ socialMedia.link }}" target="_blank">
+              <i class="{{ socialMedia.icon }}" id="breathing-button"></i>
             </a>
           </li>
         </ul>
