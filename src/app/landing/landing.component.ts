@@ -24,6 +24,10 @@ export class LandingComponent implements OnInit {
     return combineLatest([this.service.userName(), this.service.title()]);
   }
 
+  goHome() {
+    window.scroll(0, 0);
+  }
+
   goAbout() {
     this.toggleClass();
     const element = document.getElementById('about');

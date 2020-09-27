@@ -112,7 +112,7 @@ export class DataService {
         from: new Date(2020, 2),
         to: new Date(2020, 6),
         jobDescription:
-          'Development modules in miniservice architecture with angular, NestJs and Mongo',
+          'Modules development in miniservice architecture with angular, NestJs and Mongo',
       },
     ];
     return of(works);
