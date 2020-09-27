@@ -1,3 +1,5 @@
+$border: #73ffc244;
+
 .my-skills {
   margin-top: 10rem;
   display: grid;
@@ -22,7 +24,7 @@
 .icon-container {
   width: 10rem;
   height: 10rem;
-  border: 3px solid #ffe838;
+  border: 3px solid $border;
   margin-bottom: 2rem;
   display: flex;
   transform: rotate(45deg);
@@ -37,4 +39,8 @@
 .experienceInYears {
 	font-weight: 600;
 	color: white;
+}
+
+.skill:hover {
+	transform: scale(1.2);
 }

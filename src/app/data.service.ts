@@ -8,7 +8,7 @@ export class DataService {
   constructor() {}
 
   userName() {
-    return of('Jorge Edgar Sanchez Chavez');
+    return of('Jorge Edgar Sánchez Chávez');
   }
 
   title() {
@@ -44,14 +44,9 @@ export class DataService {
       color?: string;
     }[] = [
       {
-        technologyName: 'Java',
-        experienceInYears: 1,
-        icon: 'fab fa-java',
-        color: '#dd0031',
-      },
-      {
         technologyName: 'Typescript',
         experienceInYears: 2,
+        icon: 'fab fa-js-square',
         color: '#3178c6',
       },
       {
@@ -59,6 +54,12 @@ export class DataService {
         experienceInYears: 1,
         icon: 'fab fa-js-square',
         color: 'yellow',
+      },
+      {
+        technologyName: 'Java',
+        experienceInYears: 1,
+        icon: 'fab fa-java',
+        color: '#dd0031',
       },
       {
         technologyName: 'Angular',
@@ -70,7 +71,7 @@ export class DataService {
         technologyName: 'NestJs',
         experienceInYears: 1,
         icon: 'fab fa-node-js',
-        color: '#dd0031',
+        color: 'green',
       },
       {
         experienceInYears: 1,
