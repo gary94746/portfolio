@@ -8,6 +8,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { FooterComponent } from './footer/footer.component';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -17,12 +18,10 @@ import { FooterComponent } from './footer/footer.component';
     SkillsComponent,
     ProjectsComponent,
     ExperienceComponent,
-    FooterComponent
+    FooterComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule],
+  providers: [DatePipe],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

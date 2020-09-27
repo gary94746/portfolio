@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { of } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',
@@ -93,25 +94,25 @@ export class DataService {
   workHistory() {
     const works: {
       workName: string;
-      from: string;
-      to: string;
+      from: Date;
+      to: Date;
       role: string;
       jobDescription: string;
     }[] = [
       {
         workName: 'Aserradera Cordon Grande',
         role: 'Junior Software Developer',
-        from: 'June 2018',
-        to: 'August 2018',
+        from: new Date(2018, 7),
+        to: new Date(2018, 9),
         jobDescription: 'Develop desktop app with Javafx and PostgreSQL',
       },
       {
         workName: 'CIEE TecNM campus Oaxaca',
         role: 'Junior Software Developer',
-        from: 'Febreruary 2020',
-        to: 'July 2020',
+        from: new Date(2020, 2),
+        to: new Date(2020, 6),
         jobDescription:
-          'Development modules in miniservice architecture with angular and NestJs',
+          'Development modules in miniservice architecture with angular, NestJs and Mongo',
       },
     ];
     return of(works);
