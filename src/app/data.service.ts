@@ -37,9 +37,53 @@ export class DataService {
   }
 
   technologies() {
-    const stack: { technologyName: string }[] = [
-      { technologyName: 'Angular' },
-      { technologyName: 'NestJs' },
+    const stack: {
+      technologyName: string;
+      experienceInYears: number;
+      icon?: string;
+      color?: string;
+    }[] = [
+      {
+        technologyName: 'Java',
+        experienceInYears: 1,
+        icon: 'fab fa-java',
+        color: '#dd0031',
+      },
+      {
+        technologyName: 'Typescript',
+        experienceInYears: 2,
+        color: '#3178c6',
+      },
+      {
+        technologyName: 'Javascript',
+        experienceInYears: 1,
+        icon: 'fab fa-js-square',
+        color: 'yellow',
+      },
+      {
+        technologyName: 'Angular',
+        experienceInYears: 1,
+        icon: 'fab fa-angular',
+        color: '#dd0031',
+      },
+      {
+        technologyName: 'NestJs',
+        experienceInYears: 1,
+        icon: 'fab fa-node-js',
+        color: '#dd0031',
+      },
+      {
+        experienceInYears: 1,
+        technologyName: 'PostgreSQL',
+        icon: 'fas fa-database',
+        color: 'white',
+      },
+      {
+        technologyName: 'Mongo',
+        icon: 'fas fa-database',
+        experienceInYears: 1,
+        color: 'white',
+      },
     ];
 
     return of(stack);
