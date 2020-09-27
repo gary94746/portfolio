@@ -7,33 +7,28 @@
   <nav class="top-nav" #topnav>
     <ul class="nav-list">
       <li>
-        <a class="nav-link" href="index.html">
+        <a class="nav-link">
           Home
         </a>
       </li>
       <li>
-        <a class="nav-link" href="#about">
+        <a class="nav-link" (click)="goAbout()">
           About
         </a>
       </li>
       <li>
-        <a class="nav-link" href="#services">
-          Services
+        <a class="nav-link" (click)="goSkills()">
+          Skills
         </a>
       </li>
       <li>
-        <a class="nav-link" href="#portfolio">
+        <a class="nav-link" (click)="goProjects()">
           Portfolio
         </a>
       </li>
       <li>
-        <a class="nav-link" href="#experience">
+        <a class="nav-link" (click)="goExperience()">
           Experience
-        </a>
-      </li>
-      <li>
-        <a class="nav-link" href="#contact">
-          Contact
         </a>
       </li>
     </ul>
