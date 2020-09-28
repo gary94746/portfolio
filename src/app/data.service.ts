@@ -102,14 +102,14 @@ export class DataService {
       {
         workName: 'Aserradera Cordon Grande',
         role: 'Junior Software Developer',
-        from: new Date(2018, 7),
-        to: new Date(2018, 9),
+        from: new Date(2018, 6),
+        to: new Date(2018, 8),
         jobDescription: 'Develop desktop app with Javafx and PostgreSQL',
       },
       {
         workName: 'CIEE TecNM campus Oaxaca',
         role: 'Junior Software Developer',
-        from: new Date(2020, 2),
+        from: new Date(2020, 1),
         to: new Date(2020, 6),
         jobDescription:
           'Modules development in miniservice architecture with angular, NestJs and Mongo',
