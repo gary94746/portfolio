@@ -100,7 +100,7 @@ export class DataService {
       jobDescription: string;
     }[] = [
       {
-        workName: 'Aserradera Cordon Grande',
+        workName: 'Aserradero Cordón Grande',
         role: 'Junior Software Developer',
         from: new Date(2018, 6),
         to: new Date(2018, 8),
