@@ -72,8 +72,8 @@ export class DataService {
       {
         technologyName: 'NestJs',
         experienceInYears: 1,
-        icon: 'fab fa-node-js',
-        color: 'green',
+        icon: 'fas fa-cat',
+        color: 'red',
       },
       {
         experienceInYears: 1,
