@@ -51,7 +51,7 @@
 
 
 .cta-tech {
-  display: inline-block;
+	display: inline-block;
 	margin-top: 2rem;
   font-size: 1.5rem;
   color: white;
@@ -79,5 +79,10 @@
     order: 2;
 		text-align: center;
   }
+
+	.cta-container {
+		flex-direction: column;
+		display: none;
+	}
 }
 
