@@ -15,6 +15,10 @@ export class AboutComponent implements OnInit {
     return this.service.about();
   }
 
+  getEmail() {
+    return this.service.email();
+  }
+
   getSocialMedia() {
     return this.service.getSocialMedia();
   }

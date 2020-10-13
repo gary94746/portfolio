@@ -15,6 +15,10 @@ export class DataService {
     return of('Web Developer');
   }
 
+  email() {
+    return of('edgar.109885@gmail.com');
+  }
+
   about() {
     const about = `I'm from Mexico, I like to solve problems and implement new features.\n
 			Teach other people that are new in this world.

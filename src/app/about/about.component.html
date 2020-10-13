@@ -5,14 +5,20 @@
         <h1>About</h1>
         <h6>Myself</h6>
       </div>
-      <p>
-        <i class="fas fa-map-marker-alt"></i>
-        Oaxaca, México
-      </p>
-      <p>
-        <i class="fas fa-graduation-cap"></i>
-        Instituto Tecnológico de Oaxaca
-      </p>
+      <div>
+        <p>
+          <i class="fas fa-map-marker-alt"></i>
+          Oaxaca, México
+        </p>
+        <p>
+          <i class="fas fa-graduation-cap"></i>
+          Instituto Tecnológico de Oaxaca
+        </p>
+        <p>
+          <i class="far fa-envelope"></i>
+          {{ getEmail() | async }}
+        </p>
+      </div>
       <p>
         {{ getAbout() | async }}
       </p>
