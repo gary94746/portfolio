@@ -6,32 +6,31 @@
         View some of my recent work
       </h6>
     </div>
-    <div class="portfolio-item">
+    <div class="portfolio-item" *ngFor="let project of getProjects() | async">
       <div class="portfolio-description has-margin-right">
-        <h6>Web development</h6>
-        <h1>Blog website</h1>
-        <p>
-          Accusantium architecto ea nesciunt harum iure Ullam magnam amet
-          adipisci natus tenetur eius corrupti Non mollitia beatae aut
-        </p>
-        <a href="#" class="cta">View Details</a>
+        <h1>{{ project.projectName }}</h1>
+        <p>Tasks</p>
+        <ul>
+          <li *ngFor="let task of project.tasks">
+            {{ task }}
+          </li>
+        </ul>
+        <ul>
+          <li *ngFor="let tech of project.technologies" class="cta-tech">
+            #{{ tech }}
+          </li>
+        </ul>
+
+        <a
+          [href]="link.link"
+          class="cta"
+          target="_blank"
+          *ngFor="let link of project.links"
+          >{{ link.name }}</a
+        >
       </div>
       <div class="portfolio-img">
-        <img src="assets/portitem1.jpeg" alt="" />
-      </div>
-    </div>
-    <div class="portfolio-item">
-      <div class="portfolio-img has-margin-right">
-        <img src="assets/portitem1.jpeg" alt="" />
-      </div>
-      <div class="portfolio-description">
-        <h1>Blog website</h1>
-        <h6>Web development</h6>
-        <p>
-          Accusantium architecto ea nesciunt harum iure Ullam magnam amet
-          adipisci natus tenetur eius corrupti Non mollitia beatae aut
-        </p>
-        <a href="#" class="cta">View Details</a>
+        <img [src]="project.img" alt="" />
       </div>
     </div>
   </div>

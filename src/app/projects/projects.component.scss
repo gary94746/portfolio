@@ -10,12 +10,12 @@
 }
 
 .profile-img {
-  width: 50rem;
+  width: 30rem !important;
   flex: 1;
 }
 
 .portfolio-description {
-  flex: 1;
+	width: 50rem;
 }
 
 .portfolio-description h1 {
@@ -31,17 +31,37 @@
   opacity: 0.7;
 }
 
+.portfolio-description ul li {
+	font-size: 1.5rem;
+	padding: 0.2rem;
+}
+
 .cta {
   display: inline-block;
 	margin-top: 2rem;
   font-size: 1.5rem;
   color: white;
   transition: color 650ms;
+	margin-right: 0.5rem;
+	background-color: #ffffff66;
+	padding: 0.6rem;
+	border-radius: 0.5rem;
+	font-weight: bold;
 }
 
-.portfolio-description .cta:hover {
-	font-weight: 600;
+
+.cta-tech {
+  display: inline-block;
+	margin-top: 2rem;
+  font-size: 1.5rem;
+  color: white;
+  transition: color 650ms;
+	margin-right: 0.5rem;
+	background-color: #ffffff66;
+	padding: 0.8rem;
+	border-radius: 0.5rem;
 }
+
 
 @media screen and (max-width: 600px) {
 	.portfolio-item {

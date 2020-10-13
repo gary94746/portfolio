@@ -146,10 +146,18 @@ export class DataService {
       links?: { name: string; link: string }[];
     }[] = [
       {
-        projectName: 'DFS, BFS algorithm',
-        technologies: ['typescript'],
+        projectName: 'Gallery App',
+        technologies: [
+          'NestJs',
+          'Angular',
+          'PostgreSQL',
+          'Docker',
+          'Heroku',
+          'Netlify',
+          'Typescript',
+        ],
         img:
-          'https://github.com/gary94746/gallery-angular/blob/master/src/assets/Screenshot_20201012_202342.png',
+          'https://raw.githubusercontent.com/gary94746/gallery-angular/master/src/assets/Screenshot_20201012_202342.png',
         tasks: [
           'Reactive form validation',
           'Responsive Design',
@@ -181,7 +189,7 @@ export class DataService {
         projectName: 'BFS and IDDFS',
         technologies: ['Typescript', 'Node'],
         img:
-          'https://github.com/gary94746/bfs_dfs/blob/master/generated/dfs.png',
+          'https://previews.dropbox.com/p/thumb/AA9dJdH0rK6uiL5JtM_RmNgUow7FIUeRclIJkNjYDWKauQkQF7egJN6Dtuj6k1Qk82wkmlXwIkBZqzh0bso93TS_kxxiM9NJ4mlVCKsIpdhlNuuIpxFowq8FQB4Z51M1MOxgBGO7NwIDLB11JvXxBxLeAhDPFF-_5AXa2HkoWMX-YCVqFIaiuQDoaXQk9YygC1f4MplBHYnbFTNwAMhro1V7KZ3DZ0qQsg1KBtGg_hh0pNAxanUcrGqMaM5VI2rcbSSKGU-B1eo_BpcsPuAYzJ527-rwVT80g32149D4Xnyx2nRH1HKAS-lDMAc6Mc9ERt7gsVCNx25LGmNnzm-xT-IMaAlekTqE43Y9gF2-LjhfGA/p.png?fv_content=true&size_mode=5',
         tasks: [
           'DFS implementation',
           'IDDFS implementation',
