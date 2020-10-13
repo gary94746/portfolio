@@ -10,12 +10,8 @@
 }
 
 .profile-img {
-  width: 50rem;
+  width: 30rem !important;
   flex: 1;
-}
-
-.portfolio-description {
-	flex: 1;
 }
 
 .portfolio-description h1 {
@@ -32,61 +28,57 @@
 }
 
 .portfolio-description ul li {
-	font-size: 1.5rem;
-	padding: 0.2rem;
+  font-size: 1.5rem;
+  padding: 0.2rem;
 }
 
 .cta {
   display: inline-block;
-	margin-top: 2rem;
+  margin-top: 2rem;
   font-size: 1.5rem;
   color: white;
   transition: color 650ms;
-	margin-right: 0.5rem;
-	background-color: #ffffff66;
-	padding: 0.6rem;
-	border-radius: 0.5rem;
-	font-weight: bold;
+  margin-right: 0.5rem;
+  background-color: #ffffff66;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
 }
-
 
 .cta-tech {
-	display: inline-block;
-	margin-top: 2rem;
+  display: inline-block;
+  margin-top: 2rem;
   font-size: 1.5rem;
   color: white;
   transition: color 650ms;
-	margin-right: 0.5rem;
-	background-color: #ffffff66;
-	padding: 0.8rem;
-	border-radius: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: #ffffff66;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
 }
 
-
 @media screen and (max-width: 600px) {
-	.portfolio-item {
+  .portfolio-item {
     flex-direction: column;
   }
 
   .portfolio-img {
     margin: 0 0 2rem 0;
-		width: 30rem;
+    width: 30rem;
     order: 1;
   }
 
   .portfolio-description {
     margin: 0;
     order: 2;
-		text-align: center;
+    text-align: center;
   }
 
-	.portfolio-description h1 {
-		display: inline;
-	}
+  .portfolio-description h1 {
+    display: inline;
+  }
 
-	.tasks {
-		list-style: none;
-	}
-
+  .tasks {
+    list-style: none;
+  }
 }
-
