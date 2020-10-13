@@ -10,12 +10,12 @@
 }
 
 .profile-img {
-  width: 30rem !important;
+  width: 50rem;
   flex: 1;
 }
 
 .portfolio-description {
-	width: 50rem;
+	flex: 1;
 }
 
 .portfolio-description h1 {
@@ -84,9 +84,9 @@
 		display: inline;
 	}
 
-	.cta-container {
-		flex-direction: column;
-		display: none;
+	.tasks {
+		list-style: none;
 	}
+
 }
 
